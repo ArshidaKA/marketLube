@@ -21,9 +21,7 @@ export const data = [
       id: 3,
       name: "Classic Oak Frame",
       price: 1899,
-      original_price: 1299,
       img: "https://framebazaar.com/cdn/shop/files/3_95a28958-1485-42cf-a271-3fe69133c430.png?v=1724403393&width=2000",
-      offer: "25%off",
       category: "Photo frames"
     },
     {
@@ -39,9 +37,7 @@ export const data = [
       id: 5,
       name: "Golden Luxe Frame",
       price: 899,
-      original_price: 1299,
       img: "https://framebazaar.com/cdn/shop/files/3_95a28958-1485-42cf-a271-3fe69133c430.png?v=1724403393&width=2000",
-      offer: "25%off",
       category: "Photo frames"
     },
     {
@@ -66,9 +62,7 @@ export const data = [
       id: 8,
       name: "Classic Oak Frame",
       price: 599,
-      original_price: 1299,
       img: "https://framebazaar.com/cdn/shop/files/5_b64b38cf-fcdc-4a12-9a86-68983d06a5ad.png?v=1724329371",
-      offer: "25%off",
       category: "Photo frames"
     },
   

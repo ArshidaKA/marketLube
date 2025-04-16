@@ -19,10 +19,10 @@ function Preview() {
                     </div>
 
                     </div>
-                    <div>
+                    
                     
                      <Compare/>
-                    </div>
+                  
     </div>
   )
 }

@@ -56,8 +56,8 @@ function Products() {
               <div className={classes.productName}>{item.name}</div>
               <div className={classes.priceRow}>
                 <span className={classes.price}>₹{item.price}</span>
-                <span className={classes.originalPrice}>₹{item.original_price}</span>
-                <span className={classes.offer}>{item.offer}</span>
+                {item.original_price&&<span className={classes.originalPrice}>₹{item?.original_price}</span>}
+               {item.offer && <span className={classes.offer}>{item?.offer}</span>}
               </div>
             </motion.div>
           );
