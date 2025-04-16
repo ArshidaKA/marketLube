@@ -1,0 +1,26 @@
+.icons {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+  }
+  
+  .iconsImage {
+    height: 22px;
+  }
+  
+  .bucketWrapper {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .bucketImage {
+    height: 22px;
+  }
+  
+  .topRightIcon {
+    position: absolute;
+    top: -6px; 
+    right: -6px; 
+    height: 14px;
+  }
+  

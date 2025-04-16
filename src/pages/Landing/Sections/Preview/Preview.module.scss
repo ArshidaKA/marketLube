@@ -1,0 +1,27 @@
+@use "../../../../styles/variables" as *;
+
+.title{ 
+    font-family: "DM Sans",sans-serif;
+    font-size: 44px;
+    margin-left: 50px;
+    margin-top: 80px;
+}
+.subTitle{
+    font-family: 'Urbanist', sans-serif;
+    margin-left: 50px;
+    margin-top: 20px;
+    color:rgb(141, 140, 137);
+    font-size: 18px;
+}
+.mainWrapper{
+    display: grid;
+    background-color: $primary;
+    border-radius: 20px;
+    grid-template-columns: 1fr 1fr;
+}
+.button{
+    margin-left: 50px;
+    margin-top: 20px;
+
+   
+}

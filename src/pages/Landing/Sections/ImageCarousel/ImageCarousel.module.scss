@@ -1,0 +1,95 @@
+@use '../../../../styles/variables' as *;
+@use '../../../../styles/mixins' as *;
+
+.main {
+  height: 300px;
+  margin-top: 90px;
+
+  @include respond("lg") {
+    height: 250px;
+  }
+
+  @include respond("sm") {
+    height: 200px;
+    margin-top: 50px;
+  }
+}
+
+.image {
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+  @include respond("lg") {
+    height: 250px;
+  }
+
+  @include respond("sm") {
+    height: 200px;
+  }
+}
+
+.lowerImage {
+  margin-top: 20px;
+}
+
+.details {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  padding: 2rem;
+  text-align: center;
+
+  div {
+    h1 {
+      font-size: 2rem;
+      font-family: $font-primary;
+      font-weight: 500;
+      margin: 0;
+    }
+
+    p {
+      font-family: $font-secondary;
+      font-size: 1.2rem;
+      color: #666;
+      margin: 0;
+      line-height: 1.6;
+    }
+  }
+
+  @include respond("lg") {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+
+  @include respond("sm") {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 1rem;
+
+    div {
+      h1 {
+        font-size: 1.5rem;
+      }
+
+      p {
+        font-size: 0.95rem;
+      }
+    }
+  }
+
+  @include respond("xs") {
+    grid-template-columns: 1fr;
+
+    div {
+      h1 {
+        font-size: 1.3rem;
+      }
+
+      p {
+        font-size: 0.85rem;
+      }
+    }
+  }
+}
