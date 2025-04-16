@@ -5,7 +5,7 @@ import classes from "./Compare.module.scss";
 
 
 
-
+//ss
 export default function Compare() {
   return (
     <div className={classes.mainWarapper}>
