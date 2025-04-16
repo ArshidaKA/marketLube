@@ -1,9 +1,10 @@
-import React from 'react'
+import React, { useState } from 'react'
 import classes from "./Header.module.scss";
 import Logo from '../Logo/Logo';
 import NavIcons from '../navIcons/NavIcons';
-import { IoMenu } from "react-icons/io5";
+import { IoClose, IoMenu } from "react-icons/io5";
 const Header = () => {
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
     return (
     <div className={classes.main}>
             <div className={classes.heightCompensator}>
@@ -19,7 +20,21 @@ const Header = () => {
             </div>
             <NavIcons/>
 
-          <IoMenu  className={classes.mobileScreen}/> 
+          <IoMenu  className={classes.mobileScreen} onClick={()=>setIsMenuOpen(true)}/> 
+          {isMenuOpen && (
+        <div className={classes.mobileDrawer}>
+          <div className={classes.closeIcon} onClick={() => setIsMenuOpen(false)}>
+            <IoClose />
+          </div>
+          <div className={classes.mobileNav}>
+            <div>Photo Frames</div>
+            <div>Polaroids</div>
+            <div>Mugs</div>
+            <div>Keychains</div>
+            <div>Wallet cards</div>
+          </div>
+        </div>
+      )}
         </div>
 
     </div>

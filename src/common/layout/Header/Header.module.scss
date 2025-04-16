@@ -44,3 +44,38 @@ align-items: center; justify-content: space-between;
     }
   }
   
+  .mobileDrawer{
+    position: fixed;
+    top: 0;
+    background:$primary;
+    
+    height: 38vh;
+    width: 100%;
+    z-index: 9999;
+
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+
+  }
+
+  .mobileNav{
+    // background: rgb(233, 233, 233);
+    width: 90%;
+    // margin: auto;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+font-size: 30px;
+font-family: $font-primary;
+  }
+
+  .closeIcon{
+font-size: 30px;
+margin-left: 250px;
+margin-top:15px;
+ 
+  }
