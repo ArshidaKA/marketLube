@@ -49,9 +49,11 @@ align-items: center; justify-content: space-between;
     top: 0;
     background:$primary;
     
-    height: 38vh;
+    height: 43vh;
     width: 100%;
     z-index: 9999;
+    padding: 10;
+    border-bottom-left-radius: 50px;
 
 
     display: flex;
@@ -62,15 +64,16 @@ align-items: center; justify-content: space-between;
   }
 
   .mobileNav{
-    // background: rgb(233, 233, 233);
     width: 90%;
-    // margin: auto;
     margin-top: 10px;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    
+    gap: 20px;
 font-size: 30px;
 font-family: $font-primary;
+color: gray;
+font-weight: 200;
   }
 
   .closeIcon{
